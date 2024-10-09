@@ -18,12 +18,23 @@ li {
   display: flex;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 35px;
+}
+
+.gallery__preview {
+  display: flex;
+  justify-content: center;
 }
 
 .gallery__preview_close {
   background-color: transparent;
   border: none;
   font-size: 18px;
-  color: #000;
+  color: rgba(184, 184, 184, 0.741);
   opacity: 0.8;
+  position: absolute;
+  top: 33%;
+  left: 85%;
+  z-index: 999;
+  cursor: pointer;
 }
