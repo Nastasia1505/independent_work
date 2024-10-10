@@ -27,6 +27,7 @@ li {
 }
 
 .gallery__preview_close {
+  display: none;
   background-color: transparent;
   border: none;
   font-size: 18px;

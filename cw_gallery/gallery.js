@@ -12,21 +12,24 @@ const gallery = function () {
     let img = document.createElement("img");
     img.setAttribute("src", `${imgLink}`);
     imgPreview.append(img);
-
+    close();
     // imgPreview.innerHTML = `<img src = '${imgLink}' alt="#">`;
   }
 
   function remove() {
     let elems = document.querySelectorAll("div>img");
-    console.log(elems);
     if (elems.length > 0) {
+      // imgPreview.innerHTML = "";
+      imgPreview.removeChild(imgPreview.lastChild);
     }
   }
 
   function close() {
     let close = document.querySelector(".close");
+    close.style.display = "block";
     close.addEventListener("click", function () {
-      console.log("close");
+      remove();
+      close.style.display = "none";
     });
   }
 };
